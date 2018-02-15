@@ -1,0 +1,23 @@
+.header{
+    padding: 10px 0;
+}
+
+.header__cnt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .header__menu{
+    display: flex;
+    align-items: center;
+}
+
+.header .header__photo{
+    display: flex;
+    align-items: center;  
+}
+
+.header .header__social{
+    display: flex;
+    align-items: center;
+}

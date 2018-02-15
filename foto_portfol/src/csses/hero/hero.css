@@ -1,0 +1,32 @@
+.hero{
+    background-image: url(../../img/hero_bg.jpg) ;
+    min-height: 900px;
+    background-repeat:no-repeat;
+    background-size: cover;  
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero::before{
+    content: "";
+    background-color: white;
+    opacity: 0.85;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hero__cnt{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+.hero__title{
+    font-size: 60px;
+}
+.hero__subtitle{
+    font-size: 24px;
+}

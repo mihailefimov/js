@@ -1,0 +1,14 @@
+.button{
+    display: inline-block;
+    color: #c0a064;
+    border: 3px solid #c0a064;
+    padding: 20px 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.button_xxs{
+    padding: 10px 20px;
+    font-size: 14px;
+    border-width: 2px;
+}
