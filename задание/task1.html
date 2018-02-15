@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 1</title>
+</head>
+<body>
+<p>Задать количество тарелок и количество моющего средства. 
+Моющее средство расходуется из расчета 0,5 на одну тарелку. 
+В цикле выводить сколько моющего средства осталось после мытья каждой тарелки 
+В конце вывести, сколько тарелок осталось, когда моющее средство закончилось или наоборот.</p>
+
+
+<script>
+	var plateCount = 25,
+		soupCount = 10,
+		soupConsumption = 0.5;
+
+	while (plateCount != 0) {
+
+		if (soupCount - soupConsumption < 0) {
+			console.log("средство закончилось, тарелок осталось: " + plateCount); 
+			break;
+		}
+
+		soupCount -= soupConsumption;
+		plateCount--;
+		console.log("тарелка помыта, моющего средства осталось: " + soupCount);
+		if (soupCount == 0) {
+			console.log("средство закончилось, тарелок осталось: " + plateCount); 
+			break;
+		}
+
+		if (plateCount == 0) {
+			console.log("все тарелки помыты, средства осталось: " + soupCount);
+		}
+	}
+</script>
+
+
+</body>
+</html>

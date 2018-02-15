@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 5</title>
+</head>
+
+<body>
+
+<p>Создать массив из чисел. Выполнить сортировку массива по возрастанию методом пузырька. Запрещено использовать стандартные методы.
+</p>
+
+
+<script>
+var arr = [3, 4, 6, 7, 8, 1, 0, 9, 2, 5, 10];
+console.log(bubble(arr));
+
+function bubble(arr) {
+	var len = arr.length;
+
+	for (var i = 0; i < len ; i++) {
+    	for(var j = 0 ; j < len - 1; j++) {
+    		if (arr[j] > arr[j + 1]) {
+	      		var temp = arr[j];
+	      		arr[j] = arr[j+1];
+	      		arr[j + 1] = temp;
+	        }
+
+	        console.log();
+	        console.log(arr.join(','));
+   		}
+  	}
+
+  	return arr;
+}
+</script>
+
+
+</body>
+</html>

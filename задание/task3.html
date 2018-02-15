@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 3</title>
+</head>
+
+<body>
+
+<p>Посмотреть, как работают методы для работы с массивами: join, slice, indexOf/lastIndexOf, concat.
+Разобрать по 1му примену на каждый из них. В субботу обсудим</p>
+
+
+<script>
+	var arr1 = [1, 2, 3];
+	var arr2 = [4, 5, 6];
+	var arr3 = [4, 5, 6, 4];
+
+	console.log("join method: " + arr1.join(" - ")); // соединяет элементы массива, можно указать разделитель
+	console.log("slice method: " + arr1.slice(1, 3)); // создает новую копия массива, содержащий часть исходного массива, в параметрах указываются
+	console.log("indexOf method: " +  arr2.indexOf(6)); // indexOf ищет индекс элемента в массиве
+	console.log("lastIndexOf method: " +  arr3.lastIndexOf(4)); // lastIndexOf ищет последний индекс по которому может быть найден элемент в массиве
+	console.log("concat method: " + arr1.concat(arr2, arr3)); // объединяет массивы
+
+</script>
+
+
+</body>
+</html>
