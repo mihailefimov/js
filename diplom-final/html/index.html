@@ -82,14 +82,14 @@
 							<img class="close" onclick="show('none')" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/close.png">
 
 							<div id="wrap" style="    width: 150px;  ">
-								<div id="menu">
-									<div class="menu">
-										<ul>
-											<li><a href="<?php echo BEZ_HOST; ?>?mode=auth">Войти</a></li>
-											<li><a href="<?php echo BEZ_HOST; ?>?mode=reg">Регистрация</a></li>
-										</ul>
-									</div>
-								</div>
+								<!--<div id="menu">-->
+									<!--<div class="menu">-->
+										<!--<ul>-->
+											<!--<li><a href="<?php echo BEZ_HOST; ?>?mode=auth">Войти</a></li>-->
+											<!--<li><a href="<?php echo BEZ_HOST; ?>?mode=reg">Регистрация</a></li>-->
+										<!--</ul>-->
+									<!--</div>-->
+								<!--</div>-->
 								<div style="clear:both;"></div>
 								<div id="content">
 									<?php echo $content; ?>
@@ -98,15 +98,16 @@
 
 						</div>
 
-						<center><button class="myButton" onclick="show('block')">Войти</button></center>
-						<center><button class="myButton" onclick="show('block')">Регистрация</button></center>
+						<!--<center><button class="myButton" onclick="show('block')">Войти</button></center>-->
+						<!--<center><button class="myButton" onclick="show('block')">Регистрация</button></center>-->
 
 					</div>
 				</div>
 				<div>
             <nav id="nav">
                 <ul>
-                    <li class="current"><a href="index.html">Главная</a></li>
+                    <!-- <li class="current"><a href="index.html">Главная</a></li> -->
+                    <li class="current"><a href="index.php">Главная</a></li>
 
                     <li>
                         <a href="left-sidebar.html">О кафедре</a>
@@ -121,7 +122,8 @@
                     <li><a href="prep.html">Преподователи</a></li>
                     <li><a href="two-sidebar.html">Анонимный отзыв</a></li>
                     <li><a href="no-sidebar.html">Наши контакты</a></li>
-                    <li><a href="right-sidebar.html">Регистрация</a></li>
+                    <!--<li><a href="right-sidebar.html">Регистрация</a></li>-->
+                    <li><a href="lk/auth.php">Войти</a></li>
                 </ul>
             </nav>
         </div>

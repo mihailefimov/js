@@ -7,7 +7,7 @@
         TMPL;
 
     if ($.fn.readmore) return;
-    
+
     // символы окончания слова
     ENDCHARS = [' ', '.', ',', ';', '!', '?'];
 
@@ -94,7 +94,7 @@
 
                 if (data.count > data.limit.total) {
                     // формируем анонс
- 
+
                     for (; i < htmlLength; i++) {
                         // если открывается тег
                         if (html[i] === '<') {

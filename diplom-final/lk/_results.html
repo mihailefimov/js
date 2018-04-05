@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!--<link rel="stylesheet" href="../css/styles.css" />-->
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <title>Результаты тестирования</title>
+</head>
+<body>
+
+<body>
+<div id="page-wrapper">
+    <div id="header">
+        <div style="width: 100%; height:80px;">
+            <div style="width: 250px; margin-left: 10%; float:left; margin-top: 5px;">
+                <img src ="..\images\sut_logo1.png" style="width:100%;">
+            </div>
+        </div>
+    </div>
+    <div>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="profile.php">Профиль</a>
+                </li>
+                <li><a href="logout.php">Выход</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="wrapper style1">
+        <div class="container">
+            <div id="content">
+                <?php
+
+                session_start();
+
+                function getResults($testId) {
+                    require_once '../bd/bd.php';
+                    $sql = "SELECT rightAnswers FROM test_results WHERE test_id=:test_id AND user_email=:user_email";
+                    $stmt = $GLOBALS['dbConnection']->prepare($sql);
+                    $stmt->execute(array(
+                        ":test_id" => $testId,
+                        ":user_email" => $_SESSION["email"]
+                    ));
+                    $result = $stmt->fetchColumn();
+                    return $result;
+                }
+
+                echo '<h2>Результаты тестирования:</h2>';
+                $res1 = (getResults(1)) ? getResults(1) : 0;
+                $res2 = (getResults(2)) ? getResults(2) : 0;
+                $res3 = (getResults(3)) ? getResults(3) : 0;
+                $res4 = (getResults(4)) ? getResults(4) : 0;
+                echo '<h3>Тест 1:' . $res1 . '</h3>';
+                echo '<h3>Тест 2:' . $res2 . '</h3>';
+                echo '<h3>Тест 3:' . $res3 . '</h3>';
+                echo '<h3>Тест 4:'. $res4 . '</h3>';
+
+                ?>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer">
+        <div class="copyright">
+            <ul class="menu">
+                <li>&copy; Созданно Ефимовым Михаилом</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

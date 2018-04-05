@@ -1,0 +1,317 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+	<!--<head>-->
+		<!--<title>Arcana by HTML5 UP</title>-->
+		<!--<meta charset="utf-8" />-->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+		<!--&lt;!&ndash;[if lte IE 8]>-->
+		<!--<script src="../assets/js/ie/html5shiv.js"></script><![endif]&ndash;&gt;-->
+		<!--<link rel="stylesheet" href="../assets/css/main.css" />-->
+		<!--<link rel="stylesheet" href="../css/styles.css" />-->
+		<!--&lt;!&ndash;[if lte IE 8]>-->
+		<!--<link rel="stylesheet" href="../assets/css/ie8.css"/><![endif]&ndash;&gt;-->
+		<!--&lt;!&ndash;[if lte IE 9]>-->
+		<!--<link rel="stylesheet" href="../assets/css/ie9.css"/><![endif]&ndash;&gt;-->
+	<!--</head>-->
+
+
+	<!--<style type="text/css">-->
+
+
+
+		<!--#window{-->
+			<!--width: 850px;-->
+			<!--height: 650px;-->
+			<!--margin: 50px auto;-->
+			<!--display: none;-->
+			<!--background: #ECF0F1;-->
+			<!--z-index: 200;-->
+			<!--position: fixed;-->
+			<!--left: 0;-->
+			<!--right: 0;-->
+			<!--top: 0;-->
+			<!--bottom: 0;-->
+			<!--padding: 16px;-->
+			<!--border: 1px solid #F7921E;-->
+		<!--}-->
+
+		<!--.close{-->
+			<!--float: right;-->
+			<!--margin-top: 4px;-->
+			<!--cursor: pointer;-->
+		<!--}-->
+
+	<!--</style>-->
+<!--<body>-->
+
+
+
+
+
+<!--<script type="text/javascript">-->
+
+    <!--//Функция показа-->
+    <!--function show(state){-->
+
+        <!--document.getElementById('window').style.display = state;-->
+        <!--document.getElementById('wrap').style.display = state;-->
+    <!--}-->
+
+<!--</script>-->
+<!--&lt;!&ndash; Задний прозрачный фон&ndash;&gt;-->
+
+
+
+
+
+
+<!--<div id="page-wrapper">-->
+	<!--&lt;!&ndash; Header &ndash;&gt;-->
+	<!--<div id="header">-->
+		<!--&lt;!&ndash; Nav &ndash;&gt;-->
+		<!--<div style="width: 100%; height:80px;">-->
+			<!--<div style="width: 250px; margin-left: 10%; float:left; margin-top: 5px;">-->
+				<!--<img src ="..\images\sut_logo1.png" style="width:100%;">-->
+			<!--</div>-->
+			<!--<div style="width: 350px; margin-right: 10%; float:right; margin-top: 5px;">-->
+
+				<!--<div onclick="show('none')" id="wrap"></div>-->
+
+				<!--&lt;!&ndash; Само окно&ndash;&gt;-->
+				<!--<div id="window">-->
+
+					<!--&lt;!&ndash; Картинка крестика&ndash;&gt;-->
+					<!--<img class="close" onclick="show('none')" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/close.png">-->
+
+					<!--<div id="wrap" style="    width: 150px;  ">-->
+						<!--&lt;!&ndash;<div id="menu">&ndash;&gt;-->
+							<!--&lt;!&ndash;<div class="menu">&ndash;&gt;-->
+								<!--&lt;!&ndash;<ul>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li><a href="<?php echo BEZ_HOST; ?>?mode=auth">Войти</a></li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li><a href="<?php echo BEZ_HOST; ?>?mode=reg">Регистрация</a></li>&ndash;&gt;-->
+								<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+							<!--&lt;!&ndash;</div>&ndash;&gt;-->
+						<!--&lt;!&ndash;</div>&ndash;&gt;-->
+						<!--<div style="clear:both;"></div>-->
+						<!--<div id="content">-->
+							<!--<?php echo $content; ?>-->
+						<!--</div>-->
+					<!--</div>-->
+
+				<!--</div>-->
+
+				<!--&lt;!&ndash;<center><button class="myButton" onclick="show('block')">Войти</button></center>&ndash;&gt;-->
+				<!--&lt;!&ndash;<center><button class="myButton" onclick="show('block')">Регистрация</button></center>&ndash;&gt;-->
+
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div>-->
+			<!--<nav id="nav">-->
+				<!--<ul>-->
+					<!--<li class="current"><a href="index.html">Главная</a></li>-->
+
+					<!--<li>-->
+						<!--<a href="../left-sidebar.html">О кафедре</a>-->
+						<!--<ul>-->
+							<!--<li><a href="../left-sidebar.html">История</a></li>-->
+							<!--<li><a href="../no-sidebar_two.html">Лаборатории</a></li>-->
+							<!--<li><a href="../no-sidebar_three.html">Факультативы</a></li>-->
+							<!--<li><a href="../no-sidebar_fore.html">Магистратура</a></li>-->
+						<!--</ul>-->
+					<!--</li>-->
+
+					<!--<li><a href="../prep.html">Преподователи</a></li>-->
+					<!--<li><a href="../two-sidebar.html">Анонимный отзыв</a></li>-->
+					<!--<li><a href="../no-sidebar.html">Наши контакты</a></li>-->
+					<!--<li><a href="../right-sidebar.html">Регистрация</a></li>-->
+				<!--</ul>-->
+			<!--</nav>-->
+		<!--</div>-->
+
+
+
+	<!--</div>-->
+	<!--<h2>Регистрация</h2>-->
+	<!--<form action="register.php" method="POST">-->
+	<!--<table>-->
+	<!--<tr>-->
+	<!--<td>E-mail<font color="red">*</font>:</td>-->
+	<!--<td><input type="text" size="30" name="email"></td>-->
+	<!--</tr>-->
+	<!--<tr>-->
+	<!--<td>Пароль<font color="red">*</font>:</td>-->
+	<!--<td><input type="password" size="30" maxlength="20" name="pass"></td>-->
+	<!--</tr>-->
+	<!--<tr>-->
+	<!--<td>Подтверждения пароля<font color="red">*</font>:</td>-->
+	<!--<td><input type="password" size="30" maxlength="20" name="pass2"></td>-->
+	<!--</tr>-->
+	<!--<tr>-->
+	<!--<td>&nbsp;</td>-->
+	<!--<td colspan="2"><input type="submit" value="Зарегистроваться" name="submit"></td>-->
+	<!--</tr>-->
+	<!--</table>-->
+	<!--</form>-->
+	<!--<br>Поля со значком <font color="red">*</font> обязательны для заполнения-->
+	<!--<p><strong>Внимание!</strong> Для полноценной проверки системы регистрации Вам нужно указать действующий <strong>e-mail</strong> т.к. на него будет выслано письмо с кодом активации!</p>-->
+
+
+
+
+	<!--<div id="footer">-->
+		<!--&lt;!&ndash; Copyright &ndash;&gt;-->
+		<!--<div class="copyright">-->
+			<!--<a href="#"> &copy;Созданно Ефимовым Михаилом</a>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Arcana by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+<body>
+<div id="page-wrapper">
+	<!-- Header -->
+	<div id="header">
+		<!-- Nav -->
+		<div style="width: 100%; height:80px;">
+			<div style="width: 250px; margin-left: 10%; float:left; margin-top: 5px;">
+				<img src ="..\images\sut_logo1.png" style="width:100%;">
+			</div>
+			<!--<div style="width: 350px; margin-right: 10%; float:right; margin-top: 5px;">-->
+				<!--<div style="width: 350px; height: 70px; margin:0 auto; ">-->
+					<!--<span style="float: left; margin-bottom: 7px;">Логин :</span>	<input style="width:75%; height: 27px; float: right; margin-bottom: 7px;"  id="login-field" type="text" name="login">-->
+					<!--<span style="float: left">Пароль :</span>	<input style="width:75%; height: 27px; float: right;"  id="login-field" type="text" name="login">-->
+					<!--&lt;!&ndash;div class="log_a">	</div&ndash;&gt;-->
+
+				<!--</div>-->
+			<!--</div>-->
+		</div>
+		<div>
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="../index.php">Главная</a></li>
+
+					<li>
+						<a href="left-sidebar.html">О кафедре</a>
+						<ul>
+							<li><a href="left-sidebar.html">История</a></li>
+							<li><a href="no-sidebar_two.html">Лаборатории</a></li>
+							<li><a href="no-sidebar_three.html">Факультативы</a></li>
+							<li><a href="no-sidebar_fore.html">Магистратура</a></li>
+						</ul>
+					</li>
+
+					<li><a href="prep.html">Преподователи</a></li>
+					<li><a href="two-sidebar.html">Анонимный отзыв</a></li>
+					<!--<li>-->
+						<!--<a href="#">Учебные материалы</a>-->
+						<!--<ul>-->
+							<!--<li><a href="#">Теория</a>-->
+								<!--<ul>-->
+									<!--<li><a href="test.html">Раздел 1</a></li>-->
+									<!--<li><a href="test_two.html">Раздел 2</a></li>-->
+									<!--<li><a href="test_three.html">Раздел 3</a></li>-->
+									<!--<li><a href="test_fore.html">Раздел 4</a></li>-->
+								<!--</ul>-->
+
+							<!--</li>-->
+							<!--<li><a href="#">Тестирование</a>-->
+								<!--<ul>-->
+									<!--<li><a href="testing.htm">Раздел 1</a></li>-->
+									<!--<li><a href="testing_two.htm">Раздел 2</a></li>-->
+									<!--<li><a href="testing_three.htm">Раздел 3</a></li>-->
+									<!--<li><a href="testing_fore.htm">Раздел 4</a></li>-->
+								<!--</ul>-->
+
+
+							<!--</li>-->
+						<!--</ul>-->
+					<!--</li>-->
+					<li><a href="no-sidebar.html">Наши контакты</a></li>
+					<!--<li><a href="right-sidebar.html">Регистрация</a></li>-->
+					<li><a href="auth.php">Войти</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- Main -->
+	<header>
+		<h2 style="margin-left:650px;">Регистрация</h2>
+		<p style="margin-left:250px;">Для того что бы воспользоваться всеми функциями сайта пройдите пожалуйста регестрацию</p>
+	</header>
+	<div class="forma">
+		<section class="6u 12u(narrower)">
+			<h3>Форма регистрации</h3>
+			<form action="register.php" method="POST">
+				<div class="row 50%">
+					<div class="6u 12u(mobilep)">
+						<input type="text" name="name" placeholder="Имя" />
+					</div>
+					<div class="6u 12u(mobilep)">
+						<input type="text" name="surname" placeholder="Фамилия" />
+					</div>
+					<div class="6u 12u(mobilep)">
+						<input type="text" name="group_number" placeholder="Ваша группа" />
+					</div>
+					<div class="6u 12u(mobilep)">
+						<input type="email" name="email" placeholder="Ваш Email" />
+					</div>
+					<!--<div class="6u 12u(mobilep)">-->
+						<!--<input type="text" name="username" placeholder="Логин" />-->
+					<!--</div>-->
+					<div class="6u 12u(mobilep)">
+						<input type="password" name="password" placeholder="Пароль" />
+					</div>
+					<div class="6u 12u(mobilep)">
+						<input type="password" name="password2" placeholder="Повторите пароль" />
+					</div>
+					<div class="row 50%">
+						<div class="12u">
+							<ul class="actions">
+								<li><input type="submit" class="button alt" value="Регестрация" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</section>
+	</div>
+	<!-- Footer -->
+	<div id="footer">
+		<div class="copyright">
+			<ul class="menu" style="padding-top: 22px;">
+				<li>&copy;Созданно Ефимовым Михаилом</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

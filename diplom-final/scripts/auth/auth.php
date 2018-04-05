@@ -4,6 +4,9 @@
  * Site: http://bezramok-tlt.ru
  * Авторизация пользователя
  */
+
+
+ require_once '../..//func/funct.php';
  
  //Выход из авторизации
  if(isset($_GET['exit']) == true){
