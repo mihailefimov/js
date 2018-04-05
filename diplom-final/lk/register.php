@@ -2,26 +2,16 @@
 
 // Точка входа
 function registerUser() {
-    /*
-     * Пароли должны передавать через HTTP POST.
-     * Если у нас не такой метод, то сразу нафиг
-     */
+   
     if (!checkHttpMethod()) {
         error_log('HTTP METHOD IS NOT POST');
         redirectToErrorPage();
     }
 
-    // Очищает пользовательский ввод от разного вида </>
-    // на самом деле заменяет на символы </>" на html-сущности
-    // таким образом защищаемся от XSS-атак
+
     $userCredentials = cleanUserInput();
 
-    /*
-     * Если пароли на форме не воспадают, то нафиг
-     * (Как вариант, можно этот функционал перенести на сторону клиента: JavaScript.
-     * Так будет даже лучше). Ибо нам нет смысла отправлять на сервер заведомо ложный результат,
-     * но и так тоже хорошо работает. Дело вкуса
-     */
+    
     if (!comparePasswords($userCredentials['password'], $userCredentials['password2'])) {
         error_log('PASSWORDS NOT EQUAL');
         redirectToErrorPage();
